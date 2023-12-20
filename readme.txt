@@ -5,3 +5,12 @@ original datasets from
         - randomly selected 60,000 sets
 
 data_helper to clean and generate `final_dataset.txt` with sentence and corresponding labels - Singlish (0) English (1)
+
+data exploration will be done
+
+traditional ML methods conducted to do classification
+    - tokenisation required
+
+LLM
+
+
