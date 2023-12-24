@@ -6,11 +6,14 @@ original datasets from
 
 data_helper to clean and generate `final_dataset.txt` with sentence and corresponding labels - Singlish (0) English (1)
 
-data exploration will be done
-
 traditional ML methods conducted to do classification
-    - tokenisation required
+    - tokenisation and cleaning of strings
+    - logistic regression
+    - naive bayes 
+    run `traditional_ML.ipynb`
 
 LLM
-
-
+    - llama2 7B model chosen
+    - mistral 7b also possible
+    run `get_llm_outputs_1.py` to generate the csv file
+    run `get_llm_outputs_3.py` to update the csv file accordingly
