@@ -15,5 +15,5 @@ traditional ML methods conducted to do classification
 LLM
     - llama2 7B model chosen
     - mistral 7b also possible
-    run `get_llm_outputs_1.py` to generate the csv file
+    run `get_llm_outputs_1.py` to generate the csv file for the first time
     run `get_llm_outputs_3.py` to update the csv file accordingly

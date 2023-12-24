@@ -2,3 +2,4 @@ json
 pandas
 random
 langchain==0.0.336
+numpy
