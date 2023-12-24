@@ -15,15 +15,13 @@ def generate_csv(model_name):
     test_file_path = 'data/test.txt'
     data = pd.read_table(test_file_path)
     data['llm_labels'] = np.nan
-    csv_file_path=f"data/llm_output_{model_name}.csv"
+    csv_file_path=f"output/llm_output_{model_name}.csv"
     data.to_csv(csv_file_path, sep='\t', index=False)
 
 ############################################################################################################################## 
 
 '''
 step 2
-run this command in your terminal: `ollama pull llama2` or `ollama pull mistral`
-    - if you have not downloaded ollama, please refer to instructions in `open_source_llm.py`
 read llm_output.csv file (to ensure scalability and run test.txt in batches)
 input the sentences into the function `get_output_label`
 output the labels
@@ -34,16 +32,16 @@ import langchain
 
 #check data index start and end
 def get_rows(model_name):
-    csv_file_path=f"data/llm_output_{model_name}.csv"
+    csv_file_path=f"output/llm_output_{model_name}.csv"
     data = pd.read_csv(csv_file_path, sep='\t')
     num_rows = len(data)
-    return "num rows: " + str(num_rows)
+    return num_rows
 
 
 # scalable function to run it in batches
 def llm_outputs(start_index,end_index,model_fn,model_name):
     # read csv file as dataframe
-    csv_file_path=f"data/llm_output_{model_name}.csv"
+    csv_file_path=f"output/llm_output_{model_name}.csv"
     data = pd.read_csv(csv_file_path, sep='\t')
     llm_labels = []
     for sentence in data['Text'].values[start_index:end_index]: #can edit which rows i wanna run
@@ -58,4 +56,4 @@ def llm_outputs(start_index,end_index,model_fn,model_name):
 
 if __name__ == '__main__':
     generate_csv(model_names[0])
-    generate_csv(model_names[1])
+    # generate_csv(model_names[1]) # completed full run already

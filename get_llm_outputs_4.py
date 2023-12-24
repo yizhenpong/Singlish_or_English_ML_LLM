@@ -10,9 +10,9 @@ update the llm_output.csv file by using the `llm_outputs` function
 """
 model_names = ["llama2_7b", "mistral_7b"] #dont change this!
 
-model_name = model_names[1]
-start = 2300
-end = 2400
+model_name = model_names[0]
+start = 0
+end = 100
 
 '''
 run in cycles of 100 and save continuously to csv
@@ -27,6 +27,8 @@ if model_name == model_names[0]:
         end = min(end,x)
         print(llm_outputs(start,end,fn,model_name))
         start, end = start + 100, end +100
+        if start == 100:
+            break
 elif model_name == model_names[1]:
     x = get_rows(model_name)
     # print(x)
