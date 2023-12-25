@@ -11,7 +11,7 @@ update the llm_output.csv file by using the `llm_outputs` function
 model_names = ["llama2_7b", "mistral_7b"] #dont change this!
 
 model_name = model_names[1] # change based on the model you would like
-start = 15
+start = 0
 end = 100
 
 '''
