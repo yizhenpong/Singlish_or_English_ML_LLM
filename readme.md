@@ -34,10 +34,11 @@ Large Language model (LLM) methods
         ```
     - Comment line 42 and uncomment lines 44-46 in `open_source_llm.py` to get this output:
         ``` json
-                {"sentence": "Haha 6pm lo",
-                "label": 0,
-                "explanation": "The sentence is in Singlish format with 'lo' as a colloquial way of expressing
-                                    'is' or 'at', indicating a time expression. Thus, it is classified as Singlish."}```
+            {"sentence": "Haha 6pm lo",
+            "label": 0,
+            "explanation": "The sentence is in Singlish format with 'lo' as a colloquial way of expressing
+                                'is' or 'at', indicating a time expression. Thus, it is classified as Singlish."}
+        ```
 
 - run `get_llm_outputs_1.py` to generate the csv file in `output` folder for the first time
 - run `get_llm_outputs_3.py` to update the csv file accordingly
