@@ -37,7 +37,10 @@ label_schema = ResponseSchema(name="label",
         Label for the input sentence, which should be an integer label of 0 or 1.
         Please do not give comments after 0 or 1 of the form '//' or '#'
         If you are unable to classify it, provide the reason and classify it under 2""", type="int")
+
+# to run explanation, comment line 42 and uncomment lines 44-46
 response_schemas = [sentence_schema, label_schema]
+
 # explanation_schema = ResponseSchema(name="explanation", 
 #         description="Reasoning for why the sentence was classified as the label")
 # response_schemas = [sentence_schema, label_schema, explanation_schema]

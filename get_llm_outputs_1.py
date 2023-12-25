@@ -56,4 +56,4 @@ def llm_outputs(start_index,end_index,model_fn,model_name):
 
 if __name__ == '__main__':
     generate_csv(model_names[0])
-    # generate_csv(model_names[1]) # completed full run already
+    generate_csv(model_names[1]) # completed full run already

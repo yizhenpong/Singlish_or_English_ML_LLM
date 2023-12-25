@@ -10,9 +10,9 @@ update the llm_output.csv file by using the `llm_outputs` function
 """
 model_names = ["llama2_7b", "mistral_7b"] #dont change this!
 
-model_name = model_names[1]
-start = 2300
-end = 2400
+model_name = model_names[1] # change based on the model you would like
+start = 15
+end = 100
 
 '''
 run in cycles of 100 and save continuously to csv
@@ -35,6 +35,7 @@ elif model_name == model_names[1]:
         end = min(end,x)
         print(llm_outputs(start,end,fn,model_name))
         start, end = start + 100, end +100
+
 else:
     print("model is not available for use")
 
