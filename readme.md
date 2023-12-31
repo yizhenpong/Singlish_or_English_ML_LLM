@@ -56,3 +56,5 @@ Only ran rows 1-300 for llama2 7B model and rows 1-2300 for mistral 7b model
 # Results 
 Please see the research paper uploaded.
 
+# Collaborators
+The code and report sections were collaboratively completed by Pong Yi Zhen 方怡蓁 (2023级元培学院交换生 Yuanpei College Exchanger) and 游历 from (2021级外国语学院本科生 Peking University)
