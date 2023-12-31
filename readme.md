@@ -8,7 +8,7 @@ original datasets from
     - singlish_en (used) and singlish_chi (not used)
 -  Kiesel, J., Stein, B., & Lucks, S. (2017). Webis-Simple-Sentences-17 Corpus [Data set]. Network and Distributed System Security Symposium 2017 (NDSS 2017), San Diego, California. Zenodo. https://doi.org/10.5281/zenodo.205950
     - https://zenodo.org/records/205950
-    - randomly selected 60,000 sets
+    - randomly selected 60,000 sets, set seed = 10
 
 # Sampling data and Combining datasets
 `data_helper.py` to clean and generate `final_dataset.txt` with sentence and corresponding labels 
